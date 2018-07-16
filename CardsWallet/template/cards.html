@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title_block %}
+    Cards
+{% endblock %}
+{% block body_block %}
+    {% for card in cards %}
+        card.name_on_the_card
+        card.expiry_date
+        card.type
+        card.cvv
+        card.card_number
+    {% endfor %}
+{% endblock %}

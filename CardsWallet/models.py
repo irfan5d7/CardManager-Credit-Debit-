@@ -2,7 +2,7 @@ from django.contrib.auth.models import User
 from django.db import models
 from django.db import models
 # Create your models here.
-class Card(models.Model):
+class Cards(models.Model):
     name_on_the_card = models.CharField(max_length=30)
     expiry_date = models.DateField()
     type = models.CharField(max_length=20)
