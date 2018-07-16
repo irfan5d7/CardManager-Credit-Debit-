@@ -1,4 +1,5 @@
-from django.forms import forms, DateInput
+from django import forms
+from django.forms import DateInput
 
 from CardsWallet.models import Cards
 
