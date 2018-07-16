@@ -4,7 +4,7 @@ from django.forms import DateInput
 from CardsWallet.models import Cards
 
 
-class AddCard(forms.ModelForms):
+class AddCard(forms.ModelForm):
     class Meta:
         model = Cards
         exclude = ['user','id']

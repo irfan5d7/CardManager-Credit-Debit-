@@ -23,7 +23,7 @@ class LoginController(View):
             user = authenticate(username=form.cleaned_data['username'],password=form.cleaned_data['password'])
             if user is not None:
                 login(request,user)
-                return redirect('CardsWallet:index')
+                return redirect('CardsWallet:cards')
         return redirect('CardsWallet:login')
 
 def logout_user(request):
